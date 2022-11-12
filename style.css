@@ -88,7 +88,8 @@ main {
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 7s;
 }
 
-.btn-start {
+.btn-start,
+.btn-start-x5 {
   padding: 1rem 2rem;
   margin-top: 2rem;
   border: 2px solid #000;
@@ -96,7 +97,8 @@ main {
   border-radius: 3rem;
 }
 
-.btn-start:hover {
+.btn-start:hover,
+.btn-start-x5:hover {
   cursor: pointer;
   opacity: 0.7;
 }
@@ -138,4 +140,8 @@ li {
 
 .msg {
   margin-top: 2rem;
+}
+
+.listGift {
+  font-size: 28px;
 }

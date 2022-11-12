@@ -4,19 +4,22 @@
   let timer = 7000;
   let isRotating = false;
   let currentRotate = 0;
+  let Gifts = [];
 
   const wheel = $(".wheel");
   const btnStart = $(".btn-start");
+  const btnx5 = $(".btn-start-x5");
   const msg = $(".msg");
+  const listGifts = $(".listGift");
 
   const listGift = [
     {
       textName: "Trà Sữa",
-      percent: 10 / 100,
+      percent: 5 / 100,
     },
     {
       textName: "Bim Bim",
-      percent: 20 / 100,
+      percent: 10 / 100,
     },
     {
       textName: "Kẹo mút",
@@ -24,23 +27,31 @@
     },
     {
       textName: "Kiss",
-      percent: 15 / 100,
+      percent: 10 / 100,
     },
     {
       textName: "Kem lớn",
-      percent: 10 / 100,
+      percent: 5 / 100,
+    },
+    {
+      textName: "Ôm",
+      percent: 18 / 100,
     },
     {
       textName: "Kem nhỏ",
-      percent: 10 / 100,
+      percent: 12 / 100,
     },
     {
-      textName: "1 hộp xúc xich",
-      percent: 15 / 100,
+      textName: "1 hộp xúc xích",
+      percent: 7 / 100,
     },
     {
       textName: "Đi chơi TTTM",
-      percent: 5 / 100,
+      percent: 3 / 100,
+    },
+    {
+      textName: "Nothing",
+      percent: 20 / 100,
     },
   ];
 
@@ -95,7 +106,10 @@
   const showTextGift = (txt) => {
     setTimeout(() => {
       isRotating = false;
-      msg.innerHTML = ` Chúc mưng bạn nhận được: ${txt}`;
+      msg.innerHTML = ` Chúc mừng bạn nhận được: ${txt}`;
+      const received = Gifts.map((e) => e.textName);
+      console.log(received);
+      listGifts.innerHTML = received;
     }, timer);
   };
 
@@ -111,10 +125,15 @@
 
     rotateWheel(currentRotate, gift.index);
     showTextGift(gift.textName);
+    Gifts.push(gift);
   };
 
   btnStart.addEventListener("click", () => {
     !isRotating && start();
+  });
+
+  btnx5.addEventListener("click", () => {
+    !isRotating && (start(), start(), start(), start(), start());
   });
 
   renderItems();
