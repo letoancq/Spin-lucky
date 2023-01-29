@@ -16,11 +16,11 @@
   const listGift = [
     {
       textName: "70.000",
-      percent: 5 / 100,
+      percent: 3 / 100,
     },
     {
       textName: "60.000",
-      percent: 10 / 100,
+      percent: 8 / 100,
     },
     {
       textName: "30.000",
@@ -31,12 +31,12 @@
       percent: 10 / 100,
     },
     {
-      textName: "90.000",
-      percent: 5 / 100,
+      textName: "100.000",
+      percent: 1.5 / 100,
     },
     {
       textName: "20.000",
-      percent: 18 / 100,
+      percent: 22 / 100,
     },
     {
       textName: "40.000",
@@ -44,15 +44,15 @@
     },
     {
       textName: "80.000",
-      percent: 7 / 100,
-    },
-    {
-      textName: "100.000",
       percent: 3 / 100,
     },
     {
+      textName: "200.000",
+      percent: 0.5 / 100,
+    },
+    {
       textName: "10.000",
-      percent: 20 / 100,
+      percent: 25 / 100,
     },
   ];
 
