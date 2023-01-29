@@ -20,7 +20,7 @@
     },
     {
       textName: "60.000",
-      percent: 8 / 100,
+      percent: 5 / 100,
     },
     {
       textName: "30.000",
@@ -36,7 +36,7 @@
     },
     {
       textName: "20.000",
-      percent: 22 / 100,
+      percent: 25 / 100,
     },
     {
       textName: "40.000",
